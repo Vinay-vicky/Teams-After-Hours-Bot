@@ -31,7 +31,7 @@ const {
   OPENCLAW_GO_LIVE_DATE
 } = process.env;
 
-const REDIRECT_URI = "http://localhost:3000/auth/callback";
+const REDIRECT_URI = `${PUBLIC_BASE_URL}/auth/callback`;
 
 // Persistent token storage - loads from file on startup
 let tokenStore = loadTokens() || {};
