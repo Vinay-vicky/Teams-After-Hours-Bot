@@ -594,8 +594,9 @@ app.get("/delete-subscriptions", async (req, res) => {
 // --------------------
 // Start Server
 // --------------------
-const server = app.listen(PORT || 3000, () => {
-  console.log(`Server running on port ${PORT || 3000}`);
+const port = PORT || 3000;
+const server = app.listen(port, "0.0.0.0", () => {
+  console.log(`Server running on port ${port}`);
 });
 
 // --------------------
